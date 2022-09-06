@@ -1,0 +1,45 @@
+body {
+  margin: 0px;
+}
+navbar ul li {
+  display: inline-block;
+}
+li a {
+  padding: 20px;
+  margin: 0px;
+  font-family: Josefin Sans;
+  font-size: 20px;
+  color: rgb(56, 64, 227);
+  text-decoration: none;
+  transition-duration: 0.7s;
+}
+
+li a:hover {
+  background-color: rgb(78, 21, 132);
+  text-decoration: none;
+  border-radius: 10%;
+  color: aquamarine;
+}
+
+navbar ul {
+  position: fixed;
+  background-color: rgb(179, 203, 225);
+  border-bottom: 2px solid #ccc;
+  padding: 20px;
+  right: 50px;
+}
+
+.header {
+  padding: 100px;
+  margin: 0px;
+  background-color: blueviolet;
+}
+
+form {
+  margin-left: 20px;
+}
+
+footer {
+  background-color: rgb(40, 42, 42);
+  margin-top: 20px;
+}
