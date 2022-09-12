@@ -32,11 +32,25 @@ navbar ul {
 .header {
   padding: 100px;
   margin: 0px;
-  background-color: blueviolet;
+  background-image: url(contact-me.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  font-family: Lobster;
+  font-size: 50px;
+  color: rgb(22, 55, 37);
+  text-shadow: 2px 2px 2px rgb(72, 238, 128);
 }
 
 form {
   margin-left: 20px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.name-layout {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer {

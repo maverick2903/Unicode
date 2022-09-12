@@ -19,19 +19,33 @@
         <li><a href="#">Contact Me</a></li>
       </ul>
     </navbar>
-    <div class="header"><h2>Contact Us</h2></div>
+    <div class="header">
+      <h2>Contact Me</h2>
+    </div>
     <div class="box">
-      <form>
-        <p>First Name</p>
-        <input type="text" />
-        <p>Last Name</p>
-        <input type="text" />
-        <p>Email ID</p>
-        <input type="email" />
-        <p>Contact Number</p>
-        <input type="tel" />
-        <p>Age</p>
-        <input type="number" /><br />
+      <form novalidate>
+        <div>First Name</div>
+        <div>
+          <input
+            type="text"
+            id="fname-check"
+            oninput="nameFunc()"
+            onclick="marginColor()"
+          />
+        </div>
+        <p id="name-error"></p>
+        <div>Last Name</div>
+        <div>
+          <input type="text" onchange="nameFunc()" id="lname-check" />
+        </div>
+        <p class="name-error"></p>
+        <div>Email ID</div>
+        <div><input type="email" /></div>
+        <div>Contact Number</div>
+        <div><input type="tel" /></div>
+        <div>Age</div>
+        <div><input type="number" /></div>
+        <br />
         <button type="submit">Submit Info</button>
       </form>
     </div>
@@ -50,5 +64,6 @@
         <a href="#"><img src="#" />Instagram</a>
       </div>
     </footer>
+    <script src="Contact.js"></script>
   </body>
 </html>

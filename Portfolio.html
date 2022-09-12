@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Portfolio.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Tangerine|Aboreto|Lobster|Josefin Sans|Playfair Display|Quicksand|Roboto Mono"
+      href="https://fonts.googleapis.com/css?family=Aboreto|Lobster|Josefin Sans|Playfair Display|Quicksand|Roboto Mono"
     />
     <title>Portfolio</title>
   </head>
@@ -16,77 +16,104 @@
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#project">Projects</a></li>
-        <li><a href="#">Contact Me</a></li>
+        <li><a href="Contact.html" target="_blank">Contact Me</a></li>
       </ul>
     </navbar>
-    <img class="prof-pic" src="mypic.jpg" />
-    <div class="name">
-      <strong>Varun Viswanath</strong>
+    <div class="landing-page">
+      <img class="prof-pic" src="mypic.jpg" />
+      <div class="name">
+        <strong>Varun Viswanath</strong>
+      </div>
+      <p class="fade-in">
+        An Aspiring Frontend Web Developer...<span class="blink">|</span>
+      </p>
     </div>
-    <p class="fade-in">
-      An Aspiring Frontend Web Developer...<span class="blink">|</span>
-    </p>
     <div class="space1"></div>
-    <div style="background-color: rgb(30, 142, 142)">
+    <div
+      style="
+        background-image: url(background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 20px;
+        margin-left: 20px;
+        padding-right: 20px;
+        margin-right: 20px;
+      "
+    >
       <h3 id="about" class="sub-header">About</h3>
-      <div class="timeline">
-        <h3
-          style="
-            color: rgb(64, 103, 25);
-            text-shadow: 2px 2px 2px rgb(69, 197, 62);
-            font-weight: bolder;
-            font-size: 25px;
-            padding-left: 125px;
-          "
-        >
-          Timeline
-        </h3>
-        <img class="timeline-img" src="timeline2.png" />
 
-        <p>Born in Mumbai on the 29th of March 2003.</p>
+      <h3
+        style="
+          color: rgb(42, 66, 18);
+          text-shadow: 2px 2px 2px rgb(42, 158, 42);
+          font-weight: 800;
+          font-size: 40px;
+          text-decoration: solid;
+          font-family: Josefin Sans;
+        "
+      >
+        Timeline
+      </h3>
+      <div class="timeline-box">
+        <div class="timeline">
+          <p style="color: rgb(13, 13, 162)">
+            Born in Mumbai on the 29th of March 2003.
+          </p>
 
-        <p>Attended P.G Garodia School(I.C.S.E) uptil the 10th grade.</p>
+          <p style="color: rgb(7, 74, 7)">
+            Attended P.G Garodia School(I.C.S.E) uptil the 10th grade.
+          </p>
 
-        <p>
-          Went to PACE Junior Science College Andheri for my 11th and 12th
-          grade.
-        </p>
+          <p style="color: yellow">
+            Went to PACE Junior Science College Andheri for my 11th and 12th
+            grade.
+          </p>
 
-        <p>
-          Am currently studying at Dwarkadas J. Sanghvi College Of Engineering.
-        </p>
+          <p style="color: rgb(119, 8, 8)">
+            Am currently studying at Dwarkadas J. Sanghvi College Of
+            Engineering.
+          </p>
+        </div>
+
+        <img class="timeline-img" src="timeline1.png" />
+      </div>
+      <div
+        style="
+          font-size: 40px;
+          font-family: Aboreto;
+          text-align: center;
+          font-weight: 1000;
+          padding-top: 20px;
+        "
+      >
+        Facts About Me
       </div>
       <div class="about-data">
-        <ul>
-          <li>
-            Wanted to be an astronaut when I was a kid(Present note:Too
-            dangerous!)
-          </li>
-          <pre></pre>
-          <li>
-            Have been a voracious reader of fiction and non-fiction alike since
-            I was a kid.
-          </li>
-          <pre></pre>
-          <li>
-            Ardent fan of basketball and the NBA and have been playing since the
-            age of 9.
-          </li>
-          <pre></pre>
-          <li>
-            Enjoy problem solving above all others, and can spend hours solving
-            logic puzzles.
-          </li>
-          <pre></pre>
-          <li>
-            Was first introduced to object oriented programming in the 8th
-            grade, and knew then this was something I enjoyed immensely.
-          </li>
-        </ul>
+        <div>
+          Wanted to be an astronaut when I was a kid(Present note:Too
+          dangerous!)
+        </div>
+        <div>
+          Have been a voracious reader of fiction and non-fiction alike since I
+          was a kid.
+        </div>
+        <div>
+          Ardent fan of basketball and the NBA and have been playing since the
+          age of 9.
+        </div>
+        <div>Am a black belt in Karate.</div>
+        <div>
+          Enjoy problem solving above all others, and can spend hours solving
+          logic puzzles.
+        </div>
+        <div>
+          Was first introduced to object oriented programming in the 8th grade,
+          and knew then this was something I enjoyed immensely.
+        </div>
       </div>
       <div class="space2"></div>
     </div>
-    <h3 id="project" class="sub-header">Projects/Achievements</h3>
+    <h3 id="project" class="sub-header">Projects</h3>
     <div class="card">
       <a href="#">
         <img src="stockmarket-pic.jpg" style="width: 330px" />

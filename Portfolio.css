@@ -1,29 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: rgb(113, 193, 193);
+  background-image: url(background.png);
+  background-repeat: repeat-y;
+  background-size: contain;
 }
 .prof-pic {
   float: left;
-  width: 540px;
+  width: 500px;
   margin-right: 30px;
   border: 5px solid rgb(10, 52, 135);
   border-radius: 5%;
-  clear: both;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 .name {
   margin-top: 10px;
-  padding-top: 150px;
-  padding-left: 200px;
+  padding-top: 170px;
+  padding-left: 0px;
   font-family: Aboreto, monospace;
   font-size: 70px;
   text-shadow: 2px 2px 2px gray;
 }
 
 .fade-in {
-  animation: fadeIn 5s, flashtext 10s step-start infinite;
-  font-family: Roboto Mono;
-  font-size: 50px;
-  color: rgb(0, 0, 0);
+  animation: fadeIn 7s, flashtext 0.3s step-start infinite;
+  font-family: Josefin Sans;
+  font-size: 40px;
+  color: rgb(2, 20, 40);
 }
 
 @keyframes fadeIn {
@@ -60,14 +71,17 @@ body {
 }*/
 .blink {
   animation: blinker 1s step-start infinite;
-  font-family: Roboto Mono;
-  font-size: 50px;
+  font-family: Josefin Sans;
+  font-size: 40px;
 }
 
 @keyframes blinker {
   50% {
     opacity: 0;
   }
+}
+navbar {
+  margin-top: 70px;
 }
 navbar ul li {
   display: inline-block;
@@ -98,29 +112,50 @@ navbar ul {
 }
 .sub-header {
   font-family: Lobster;
-  font-size: 40px;
+  font-size: 50px;
   color: rgb(22, 55, 37);
   text-align: center;
   text-shadow: 2px 2px 2px rgb(72, 238, 128);
 }
 .about-data {
+  display: flex;
+  flex-wrap: wrap;
   font-family: Playfair Display;
   font-weight: bolder;
-  font-size: large;
-  color: rgb(42, 42, 98);
+  font-size: 20px;
+  color: rgb(45, 16, 150);
+  padding-top: 50px;
+}
+
+.about-data div {
+  flex-basis: 50%;
+  color: rgb(230, 230, 22);
+  background-color: rgb(230, 230, 22);
+}
+
+.about-data div:hover {
+  border: rgb(226, 34, 34) 3px solid;
+  flex-basis: 50%;
+  background-color: rgb(11, 33, 65);
+  color: rgb(93, 245, 106);
 }
 
 .timeline-img {
-  float: left;
-  width: 125px;
-  size: 170px;
+  width: 1000px;
+  justify-content: center;
+  margin-left: 245px;
 }
 
 .timeline {
-  font-family: Quicksand;
+  display: flex;
+  flex-basis: 25%;
+  font-family: Josefin Sans;
   font-weight: bold;
   font-size: 20px;
-  height: 250px;
+  height: 100px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding-left: 10px;
 }
 
 .card {
@@ -152,12 +187,33 @@ div a:visited {
   text-decoration: none;
 }
 .space1 {
-  height: 300px;
+  height: 333px;
 }
 .space2 {
-  height: 200px;
+  height: 32px;
 }
 footer pre {
   font-size: 20px;
   font-family: fantasy;
+}
+
+@media (max-width: 1030px) {
+  .prof-pic {
+    float: none;
+  }
+  .name {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .fade-in {
+    text-align: center;
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  .prof-pic {
+    width: 50%;
+  }
 }
