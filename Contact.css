@@ -48,6 +48,9 @@ form {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+input {
+  outline: none;
+}
 .name-layout {
   display: flex;
   flex-wrap: wrap;

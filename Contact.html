@@ -25,28 +25,32 @@
     <div class="box">
       <form novalidate>
         <div>First Name</div>
-        <div>
-          <input
-            type="text"
-            id="fname-check"
-            oninput="nameFunc()"
-            onclick="marginColor()"
-          />
+        <div id="fname-border">
+          <input type="text" id="fname-check" oninput="fnameFunc(id)" />
         </div>
-        <p id="name-error"></p>
+        <p id="fname-error"></p>
         <div>Last Name</div>
-        <div>
-          <input type="text" onchange="nameFunc()" id="lname-check" />
+        <div id="lname-border">
+          <input type="text" oninput="lnameFunc(id)" id="lname-check" />
         </div>
-        <p class="name-error"></p>
+        <p id="lname-error"></p>
         <div>Email ID</div>
-        <div><input type="email" /></div>
+        <div id="email-border">
+          <input type="email" id="email-check" oninput="emailFunc()" />
+        </div>
+        <p id="email-error"></p>
         <div>Contact Number</div>
-        <div><input type="tel" /></div>
+        <div id="tel-border">
+          <input type="tel" id="tel-check" oninput="telephoneFunc()" />
+        </div>
+        <p id="tel-error"></p>
         <div>Age</div>
-        <div><input type="number" /></div>
+        <div id="age-border">
+          <input type="number" id="age-check" oninput="ageFunc()" />
+        </div>
+        <p id="age-error"></p>
         <br />
-        <button type="submit">Submit Info</button>
+        <button type="submit" onclick="return submitFunc()">Submit Info</button>
       </form>
     </div>
     <footer class="footer-box">
