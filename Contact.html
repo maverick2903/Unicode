@@ -9,20 +9,29 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Tangerine|Aboreto|Lobster|Josefin Sans|Playfair Display|Quicksand|Roboto Mono"
     />
-    <title>Document</title>
+    <link rel="shortcut icon" href="contact-favicon.png" type="image/png" />
+    <title>Contact Me</title>
   </head>
   <body>
     <navbar>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#">Contact Me</a></li>
+        <li><a href="Portfolio.html">Back To Home Page</a></li>
       </ul>
     </navbar>
     <div class="header">
       <h2>Contact Me</h2>
     </div>
-    <div class="box">
+    <div class="input-box">
+      <div
+        style="
+          font-family: Josefin Sans;
+          font-size: 30px;
+          color: rgb(16, 65, 36);
+          padding-bottom: 5px;
+        "
+      >
+        Contact Details
+      </div>
       <form novalidate>
         <div>First Name</div>
         <div id="fname-border">
@@ -50,24 +59,34 @@
         </div>
         <p id="age-error"></p>
         <br />
-        <button type="submit" onclick="return submitFunc()">Submit Info</button>
+        <a class="submit" onclick="return submitFunc()" href="#">Submit</a>
       </form>
     </div>
-    <footer class="footer-box">
-      Find me at
+    <div class="social-box">
+      <div style="font-size: 30px">Find me at</div>
       <div>
-        <a href="#"><img src="#" />Gmail</a>
+        <a href="mailto: varunvis2903@gmail.com"
+          ><img src="gmail-pic.png" />varunvis2903@gmail.com</a
+        >
       </div>
       <div>
-        <a href="#"><img src="#" />LinkedIn</a>
+        <a
+          href="https://www.linkedin.com/in/varun-viswanath-10a3b0222/"
+          target="_blank"
+          ><img src="linkedin-pic.png" />LinkedIn</a
+        >
       </div>
       <div>
-        <a href="#"><img src="#" />GitHub</a>
+        <a href="https://github.com/maverick2903"
+          ><img src="github-pic.png" />GitHub</a
+        >
       </div>
       <div>
-        <a href="#"><img src="#" />Instagram</a>
+        <a href="https://www.instagram.com/varun__41/"
+          ><img src="insta-pic.png" />Instagram</a
+        >
       </div>
-    </footer>
+    </div>
     <script src="Contact.js"></script>
   </body>
 </html>
