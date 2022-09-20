@@ -1,7 +1,49 @@
+body {
+  background-color: bisque;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: bahnschrift;
+}
+
 table,
 th,
 tr,
 td {
   border: 2px solid black;
   border-collapse: collapse;
+  font-family: bahnschrift;
+  text-align: center;
+}
+
+table {
+  margin: 5px;
+  overflow-x: auto;
+}
+
+th {
+  background-color: brown;
+  color: antiquewhite;
+  padding: 5px;
+}
+
+td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+tbody tr {
+  background-color: antiquewhite;
+  font-size: 20px;
+}
+
+tbody tr:hover {
+  color: rgb(227, 209, 182);
+  background-color: rgb(96, 9, 9);
+}
+
+thead {
+  position: sticky;
 }
