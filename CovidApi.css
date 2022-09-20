@@ -27,6 +27,9 @@ th {
   background-color: brown;
   color: antiquewhite;
   padding: 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 td {

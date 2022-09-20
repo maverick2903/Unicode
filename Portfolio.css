@@ -5,12 +5,11 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
-  background-color: rgb(113, 193, 193);
-  background-image: url(background.png);
-  background-repeat: repeat-y;
-  background-size: contain;
+  background-image: linear-gradient(rgb(176, 237, 237), rgb(15, 49, 90));
 }
+
 .prof-pic {
   float: left;
   width: 500px;
@@ -31,7 +30,7 @@ body {
 }
 
 .fade-in {
-  animation: fadeIn 7s, flashtext 0.3s step-start infinite;
+  animation: fadeIn 7s;
   font-family: Josefin Sans;
   font-size: 40px;
   color: rgb(2, 20, 40);
@@ -46,29 +45,6 @@ body {
   }
 }
 
-/*@keyframes flashtext {
-  0% {
-    color: rgb(174, 232, 206);
-  }
-  17% {
-    color: rgb(117, 242, 198);
-  }
-  33% {
-    color: rgb(37, 203, 170);
-  }
-  50% {
-    color: rgb(26, 96, 153);
-  }
-  67% {
-    color: blue;
-  }
-  83% {
-    color: indigo;
-  }
-  100% {
-    color: rgb(39, 8, 93);
-  }
-}*/
 .blink {
   animation: blinker 1s step-start infinite;
   font-family: Josefin Sans;
@@ -94,29 +70,57 @@ li a {
   color: rgb(56, 64, 227);
   text-decoration: none;
   transition-duration: 0.7s;
+  border-radius: 1px;
 }
 
 li a:hover {
   background-color: rgb(78, 21, 132);
   text-decoration: none;
-  border-radius: 10%;
+  border-radius: 35px;
   color: aquamarine;
 }
 
 navbar ul {
   position: fixed;
   background-color: rgb(179, 203, 225);
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid rgb(144, 144, 144);
   padding: 20px;
   right: 50px;
 }
+
 .sub-header {
   font-family: Lobster;
   font-size: 50px;
   color: rgb(22, 55, 37);
   text-align: center;
   text-shadow: 2px 2px 2px rgb(72, 238, 128);
+  margin-top: 10px;
 }
+
+.timeline-img {
+  /*justify-content: center;*/
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.timeline {
+  display: flex;
+  flex-basis: 100%;
+  font-family: Josefin Sans;
+  font-weight: bold;
+  font-size: 20px;
+  height: 100px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  padding-left: 10px;
+}
+
+.timeline p {
+  flex-basis: 25%;
+}
+
 .about-data {
   display: flex;
   flex-wrap: wrap;
@@ -129,41 +133,38 @@ navbar ul {
 
 .about-data div {
   flex-basis: 50%;
-  color: rgb(230, 230, 22);
-  background-color: rgb(230, 230, 22);
+  color: rgb(132, 228, 150);
+  background-color: rgb(96, 79, 112);
+  border: 2px solid salmon;
+  text-align: center;
 }
 
-.about-data div:hover {
+/* .about-data div:hover {
   border: rgb(226, 34, 34) 3px solid;
   flex-basis: 50%;
   background-color: rgb(11, 33, 65);
   color: rgb(93, 245, 106);
-}
+} */
 
-.timeline-img {
-  width: 1000px;
-  justify-content: center;
-  margin-left: 245px;
-}
-
-.timeline {
+.project-box {
   display: flex;
-  flex-basis: 25%;
-  font-family: Josefin Sans;
-  font-weight: bold;
-  font-size: 20px;
-  height: 100px;
-  flex-shrink: 0;
-  flex-grow: 0;
-  padding-left: 10px;
+  flex-basis: 50%;
+  justify-content: space-between;
+  margin-left: 100px;
+  padding-left: 40px;
+  margin-right: 100px;
+  padding-right: 40px;
+  margin-top: 80px;
+  padding-top: 80px;
+}
+
+.project-box div {
+  flex-wrap: wrap;
 }
 
 .card {
   box-shadow: 2px 4px 2px gray;
   transition-duration: 0.3s;
-  display: inline-block;
-  margin-left: 345px;
-  margin-top: 100px;
 }
 
 .card:hover {
@@ -175,6 +176,26 @@ navbar ul {
   background-color: #ccc;
   font-family: Roboto Mono;
   font-size: 15px;
+}
+
+footer {
+  background-color: #ccc;
+  padding: 0px;
+}
+
+.social-box img {
+  width: 20px;
+  margin-right: 5px;
+}
+.social-box div {
+  padding: 20px;
+  font-family: Josefin Sans;
+}
+.social-box a {
+  text-decoration: none;
+  color: blanchedalmond;
+  font-family: Josefin Sans;
+  font-size: larger;
 }
 
 div a:link {
@@ -215,5 +236,39 @@ footer pre {
 @media (max-width: 550px) {
   .prof-pic {
     width: 50%;
+  }
+}
+
+@media (max-width: 716px) {
+  navbar {
+    margin-top: 70px;
+  }
+  navbar ul li {
+    display: flex;
+    flex-basis: content;
+  }
+  li a {
+    padding: 20px;
+    margin: 0px;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    color: rgb(56, 64, 227);
+    text-decoration: none;
+    transition-duration: 0.7s;
+  }
+
+  li a:hover {
+    background-color: rgb(78, 21, 132);
+    text-decoration: none;
+    border-radius: 10%;
+    color: aquamarine;
+  }
+
+  navbar ul {
+    position: fixed;
+    background-color: rgb(179, 203, 225);
+    border-bottom: 2px solid #ccc;
+    padding: 20px;
+    right: 50px;
   }
 }
