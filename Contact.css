@@ -10,7 +10,7 @@ navbar ul li {
   display: inline-block;
 }
 li a {
-  padding: 20px;
+  padding: 10px;
   margin: 0px;
   font-family: Josefin Sans;
   font-size: 20px;
@@ -30,7 +30,7 @@ navbar ul {
   position: fixed;
   background-color: rgb(179, 203, 225);
   border-bottom: 2px solid #ccc;
-  padding: 20px;
+  padding: 10px;
   right: 50px;
   z-index: 1;
 }
@@ -145,4 +145,17 @@ input {
 .submit:hover {
   background-color: #19db20;
   color: rgb(19, 52, 52);
+}
+
+@media (max-width: 1156px) {
+  .social-box {
+    top: 1000px;
+    left: 175px;
+  }
+  .input-box {
+    left: 160px;
+  }
+  body {
+    height: 1500px;
+  }
 }

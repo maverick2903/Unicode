@@ -12,7 +12,6 @@ fetch("https://corona-virus-world-and-india-data.p.rapidapi.com/api", options) /
   .catch((err) => console.error(err));
 
 function countryData(country_data) {
-  console.log(country_data);
   let body = document.querySelector("tbody");
   //For selecting each country's full data
   for (const countryText of country_data) {

@@ -10,52 +10,6 @@ body {
   background-image: linear-gradient(rgb(176, 237, 237), rgb(15, 49, 90));
 }
 
-.prof-pic {
-  float: left;
-  width: 500px;
-  margin-right: 30px;
-  border: 5px solid rgb(10, 52, 135);
-  border-radius: 5%;
-  margin-left: 50px;
-  margin-top: 50px;
-}
-
-.name {
-  margin-top: 10px;
-  padding-top: 170px;
-  padding-left: 0px;
-  font-family: Aboreto, monospace;
-  font-size: 70px;
-  text-shadow: 2px 2px 2px gray;
-}
-
-.fade-in {
-  animation: fadeIn 7s;
-  font-family: Josefin Sans;
-  font-size: 40px;
-  color: rgb(2, 20, 40);
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.blink {
-  animation: blinker 1s step-start infinite;
-  font-family: Josefin Sans;
-  font-size: 40px;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
 navbar {
   margin-top: 70px;
 }
@@ -86,6 +40,63 @@ navbar ul {
   border-bottom: 2px solid rgb(144, 144, 144);
   padding: 20px;
   right: 50px;
+  z-index: 1;
+}
+
+.prof-pic {
+  float: left;
+  width: 500px;
+  margin-right: 30px;
+  border: 5px solid rgb(10, 52, 135);
+  border-radius: 5%;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.name {
+  margin-top: 10px;
+  padding-top: 170px;
+  padding-left: 0px;
+  font-family: Aboreto, monospace;
+  font-size: 70px;
+  text-shadow: 2px 2px 2px gray;
+}
+
+.fade-in {
+  animation-duration: 10s;
+  animation-fill-mode: both;
+}
+
+.fadeinUp {
+  animation-name: fadeInUp;
+  font-family: Source Code Pro;
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(10, 57, 110);
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+  font-family: Josefin Sans;
+  font-size: 40px;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 .sub-header {
@@ -122,21 +133,59 @@ navbar ul {
 }
 
 .about-data {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: Playfair Display;
+  font-family: Josefin Sans;
   font-weight: bolder;
   font-size: 20px;
   color: rgb(45, 16, 150);
-  padding-top: 50px;
 }
 
-.about-data div {
-  flex-basis: 50%;
-  color: rgb(132, 228, 150);
-  background-color: rgb(96, 79, 112);
-  border: 2px solid salmon;
+.about-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin: -150px;
+  /* float: left; */
+  perspective: 500px;
+}
+
+.about-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.about-card:hover .about-content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(48, 169, 167);
+  line-height: 300px;
+  color: #03446a;
   text-align: center;
+  font-size: 30px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: #03446a;
+  color: rgb(35, 211, 208);
+  transform: rotateY(180deg);
+  line-height: normal;
+  text-align: center;
+  padding: 10px;
 }
 
 /* .about-data div:hover {
@@ -181,6 +230,7 @@ navbar ul {
 footer {
   background-color: #ccc;
   padding: 0px;
+  border-radius: 10px;
 }
 
 .social-box img {
@@ -211,11 +261,7 @@ div a:visited {
   height: 333px;
 }
 .space2 {
-  height: 32px;
-}
-footer pre {
-  font-size: 20px;
-  font-family: fantasy;
+  height: 900px;
 }
 
 @media (max-width: 1030px) {
