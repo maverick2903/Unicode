@@ -1,0 +1,47 @@
+[
+  {
+    "text": "What is the capital of America?",
+    "options": [
+      { "id": 0, "text": "New York City", "isCorrect": false },
+      { "id": 1, "text": "Boston", "isCorrect": false },
+      { "id": 2, "text": "Santa Fe", "isCorrect": false },
+      { "id": 3, "text": "Washington DC", "isCorrect": true }
+    ]
+  },
+  {
+    "text": "What is the capital of India?",
+    "options": [
+      { "id": 0, "text": "New Delhi", "isCorrect": true },
+      { "id": 1, "text": "Kolkata", "isCorrect": false },
+      { "id": 2, "text": "Mumbai", "isCorrect": false },
+      { "id": 3, "text": "Chennai", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "What is the capital of Germany?",
+    "options": [
+      { "id": 0, "text": "Munich", "isCorrect": false },
+      { "id": 1, "text": "Berlin", "isCorrect": true },
+      { "id": 2, "text": "Brazil", "isCorrect": false },
+      { "id": 3, "text": "Cologne", "isCorrect": false }
+    ]
+  },
+  {
+    "text": "What is the capital of Australia?",
+    "options": [
+      { "id": 0, "text": "New South Wales", "isCorrect": false },
+      { "id": 1, "text": "Melbourne", "isCorrect": false },
+      { "id": 2, "text": "Sydney", "isCorrect": false },
+      { "id": 3, "text": "Canberra", "isCorrect": true }
+    ]
+  },
+  {
+    "text": "What is the capital of Chile?",
+    "options": [
+      { "id": 0, "text": "Bogota", "isCorrect": false },
+      { "id": 1, "text": "Peru", "isCorrect": false },
+      { "id": 2, "text": "Santiago", "isCorrect": true },
+      { "id": 3, "text": "Lima", "isCorrect": false }
+    ]
+  }
+]
